@@ -1,0 +1,7 @@
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background: #312450;
+    font-size: 0.65em;
+  }
