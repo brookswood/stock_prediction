@@ -1,9 +1,12 @@
-from flask import Flask,render_template,request,jsonify
+from flask import Flask,Blueprint, render_template,request,jsonify
+from . import db
 from random import sample
 import pandas as pd
 import gatherer
 import company
 import logica
+
+main = Blueprint('main', __name__)
 
 app = Flask(__name__)
 
@@ -16,6 +19,9 @@ comp_name = ""
 @app.route('/')
 def index():
 	return render_template('main.html')
+
+@app.route('/login ')
+def login():
 
 @app.route('/data',methods=["POST", 'GET'])
 def data():

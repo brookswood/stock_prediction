@@ -5,3 +5,5 @@ pandas_datareader
 sklearn
 matplotlib
 gunicorn
+flask-login
+flask-sqlalchemy
