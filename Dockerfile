@@ -1,6 +1,6 @@
 FROM python:latest
 RUN apt-get update -y
-RUN apt-get install -y python-pip
+RUN apt-get install -y python3-pip
 COPY . /app
 WORKDIR /app
 COPY nginx.conf /etc/nginx/nginx.conf
