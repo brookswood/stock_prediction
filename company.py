@@ -7,15 +7,14 @@ def get_symbol(symbol):
     return longName
 
 
-'''
-import requests
+
+# import requests
 
 
-def get_symbol(symbol):
-    url = "http://d.yimg.com/autoc.finance.yahoo.com/autoc?query={}&region=1&lang=en".format(symbol)
+# def get_symbol(symbol):
+#     url = "http://d.yimg.com/autoc.finance.yahoo.com/autoc?query={}&region=1&lang=en".format(symbol)
 
-    result = requests.get(url).json()
+#     result = requests.get(url).json()
 
-    for x in result['ResultSet']['Result']:
-    	return x['name']
-'''
+#     for x in result['ResultSet']['Result']:
+#     	return x['name']
