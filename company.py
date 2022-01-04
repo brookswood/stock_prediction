@@ -1,3 +1,13 @@
+import yahooquery
+
+def get_symbol(symbol):
+    getDetails = yahooquery.Ticker(symbol)
+    longName = (getDetails.price.get(symbol).get('longName'))
+    # print(getDetails.price.get(symbol).get('longName'))
+    return longName
+
+
+'''
 import requests
 
 
@@ -8,3 +18,4 @@ def get_symbol(symbol):
 
     for x in result['ResultSet']['Result']:
     	return x['name']
+'''
